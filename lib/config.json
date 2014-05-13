@@ -7,7 +7,7 @@
 	"workerExitCode": {
 		"invalidArgs": 1
 	},
-	"maxConcurrentWorkerTasks": 10,
-	"timeout": 10000,
+	"maxConcurrentWorkerTasks": 1,
+	"timeout": 5000,
 	"storageBasePath": "/Users/gary/Projects/webyom/page-snapshot/storage/"
 }
