@@ -1,0 +1,13 @@
+{
+	"defaultArgv": {
+		"zmqPort": 5432, 
+		"wsPort": 5431,
+		"workers": 2
+	},
+	"workerExitCode": {
+		"invalidArgs": 1
+	},
+	"maxConcurrentWorkerTasks": 10,
+	"timeout": 10000,
+	"storageBasePath": "/Users/gary/Projects/webyom/page-snapshot/storage/"
+}

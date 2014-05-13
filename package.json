@@ -1,0 +1,15 @@
+{
+  "name": "page-snapshot",
+  "version": "0.0.1",
+  "description": "page-snapshot",
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "redis": "~0.10.1",
+    "zmq": "~2.7.0",
+    "ws": "~0.4.31",
+    "yargs": "~1.2.1",
+    "colors": "~0.6.2"
+  },
+  "devDependencies": {
+  }
+}
