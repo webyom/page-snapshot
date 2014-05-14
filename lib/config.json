@@ -8,6 +8,6 @@
 		"invalidArgs": 1
 	},
 	"maxConcurrentWorkerTasks": 20,
-	"timeout": 20000,
+	"timeout": 30000,
 	"storageBasePath": "/Users/gary/Projects/webyom/page-snapshot/storage/"
 }
