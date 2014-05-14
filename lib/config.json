@@ -9,5 +9,5 @@
 	},
 	"maxConcurrentWorkerTasks": 20,
 	"timeout": 30000,
-	"storageBasePath": "/Users/gary/Projects/webyom/page-snapshot/storage/"
+	"storageBasePath": "/var/www/images/public_resource"
 }
