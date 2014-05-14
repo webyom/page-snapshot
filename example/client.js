@@ -10,9 +10,13 @@ if(cluster.isMaster) {
 	setTimeout(function() {
 		for(var i = 0; i < 10; i++) {
 			client.request('snapshot', {
-				url: 'http://www.qq.com/i/#id=' + process.pid,
+				url: 'http://www.taobao.com/#id=' + process.pid,
 				format: 'png',
+				delayRender: 2000,
 				getSummary: true,
+				userAgent: 'Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A543 Safari/419.3',
+				javascriptEnabled: true,
+				loadImages: true,
 				quality: 50,
 				zoomFactor: 1,
 				clipRect: {
