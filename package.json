@@ -2,14 +2,37 @@
   "name": "page-snapshot",
   "version": "0.0.1",
   "description": "page-snapshot",
+  "keywords": [
+    "snapshot"
+  ],
+  "homepage": "https://github.com/webyom/page-snapshot",
+  "author": {
+    "name": "Gary Wang",
+    "email": "webyom@gmail.com",
+    "url": "http://webyom.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webyom/page-snapshot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webyom/page-snapshot/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/webyom/page-snapshot/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "app.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
   "dependencies": {
     "underscore": "~1.6.0",
-    "redis": "~0.10.1",
-    "zmq": "~2.7.0",
     "messenger": "~0.0.9",
     "ws": "~0.4.31",
-    "yargs": "~1.2.1",
-    "colors": "~0.6.2"
+    "yargs": "~1.2.1"
   },
   "devDependencies": {
   }

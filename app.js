@@ -2,7 +2,7 @@ var SnapshotServer = require('./lib/snapshot-server').SnapshotServer;
 var config = require('./lib/config');
 var yargs = require('yargs');
 var argv = yargs
-	.usage('Usage: $0 --zmq-port [num] --ws-port [num] --workers [num]')
+	.usage('Usage: $0 --ms-port [num] --ws-port [num] --workers [num]')
 	.alias('p', 'ms-port').default('p', config.defaultArgv.msPort).describe('p', 'Messenger listening port')
 	.alias('P', 'ws-port').default('P', config.defaultArgv.wsPort).describe('P', 'Web-Socket listening port')
 	.alias('w', 'workers').default('w', config.defaultArgv.workers).describe('w', 'Phantomjs worker amount')
