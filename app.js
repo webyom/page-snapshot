@@ -22,6 +22,6 @@ var server = new SnapshotServer({
 
 process.on('uncaughtException', function(err) {
 	server.stop();
-	console.log(err);
+	console.log(err.stack);
 	process.exit(1);
 });
