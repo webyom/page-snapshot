@@ -1,0 +1,14 @@
+{
+	"default": {
+		"msPort": 5432, 
+		"wsPort": 5431,
+		"workers": 4,
+		"slimerjs": false,
+		"workerExitCode": {
+			"invalidArgs": 1
+		},
+		"maxConcurrentWorkerTasks": 20,
+		"timeout": 60000,
+		"storageBasePath": "/var/www/images/publicresource"
+	}
+}

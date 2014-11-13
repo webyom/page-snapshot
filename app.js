@@ -1,27 +1,17 @@
 var SnapshotServer = require('./lib/snapshot-server').SnapshotServer;
 var config = require('./lib/config');
 var yargs = require('yargs');
-var argv = yargs
-	.usage('Usage: $0 --ms-port [num] --ws-port [num] --workers [num]')
-	.alias('p', 'ms-port').default('p', config.defaultArgv.msPort).describe('p', 'Messenger listening port')
-	.alias('P', 'ws-port').default('P', config.defaultArgv.wsPort).describe('P', 'Web-Socket listening port')
-	.alias('w', 'workers').default('w', config.defaultArgv.workers).describe('w', 'Phantomjs worker amount')
-	.alias('h', 'help').boolean('h').describe('h', 'Help')
-	.argv;
 
+var argv = config.getArgv();
 if(argv.h) {
-	console.log(yargs.help());
+	console.log(config.argHelp());
 	process.exit(0);
 }
 
-var server = new SnapshotServer({
-	zmqPort: argv.zmqPort, 
-	wsPort: argv.wsPort, 
-	workers: argv.workers
-});
+var server = new SnapshotServer();
 
 process.on('uncaughtException', function(err) {
 	server.stop();
-	console.log(err.stack);
+	console.log(err.stack || err.message || err.err || err.toString());
 	process.exit(1);
 });
